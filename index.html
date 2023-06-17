@@ -62,7 +62,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
     }
   }
   
-  #loading-screen {
+<!-- Loading Screen -->  
+
+ body {
+  overflow: hidden;
+}
+
+#loading-screen {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,29 +80,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
   height: 100%;
   background-color: white;
   z-index: 9999;
-  opacity: 1; /* Initially fully visible */
-  transition: opacity 2s ease; /* Fade-in transition */
-}
-
-#loading-screen.fade-in {
-  opacity: 1; /* Show the loading screen */
+  opacity: 1;
+  transition: opacity 3s ease;
 }
 
 #loading-screen.fade-out {
-  opacity: 0; /* Start the fade-out transition */
-}
-
-#loading-screen img {
-  width: 30%;
-  margin-bottom: 1px;
-}
-
-#loading-screen p {
-  text-align: center;
-}
-
-#menu {
-  display: none;
+  opacity: 0;
 }
 
 
@@ -105,10 +94,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 </head>
 <body>
 <!-- Loading Screen -->
-<div id="loading-screen" class="fade-in">
+<div id="loading-screen">
   <img src="lochefconsiglia.svg" alt="Loading Image">
   <p>Grazie per aver scelto il nostro Ristorante Albaruja<br>La cucina come atto di Condivisione</p>
 </div>
+
 <!-- Menu Container -->
 <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
   <div class="w3-content">
@@ -586,23 +576,22 @@ function openMenu(evt, menuName) {
 document.getElementsByClassName("tablink")[0].click();
  
  // Wait for the page to load
-window.addEventListener('load', function() {
+window.addEventListener("load", function() {
   // Show the loading screen
-  document.getElementById('loading-screen').classList.add('fade-in');
+  document.getElementById("loading-screen").classList.add("fade-in");
 
   // Hide the loading screen with fade-out effect after a delay
   setTimeout(function() {
-    document.getElementById('loading-screen').classList.add('fade-out');
+    document.getElementById("loading-screen").classList.add("fade-out");
 
     // Hide the loading screen after the fade-out transition
     setTimeout(function() {
-      document.getElementById('loading-screen').style.display = 'none';
+      document.getElementById("loading-screen").style.display = "none";
       // Show the menu content
-      document.getElementById('menu').style.display = 'block';
-    }, 2000); // Delay should match the transition duration in CSS
-  }, 2000); // Delay before fade-out effect starts, adjust as needed
+      document.getElementById("menu").style.display = "block";
+    }, 3000); // Delay should match the transition duration in CSS
+  }, 3000); // Delay before fade-out effect starts, adjust as needed
 });
-
  
 </script>
 
