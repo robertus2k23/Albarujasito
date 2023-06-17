@@ -47,7 +47,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
   <div class="w3-content">
     <div style="text-align: center; margin: 0 auto;">
-      <img src="https://vistaristorante.it/img/menu/lochefconsiglia.svg" alt="Menu Image" style="width: 100%; margin-bottom: 1px; background-color: white; border-left: 140px solid white; border-right: 140px solid white;">
+      <img src="lochefconsiglia.svg" alt="Menu Image" style="width: 100%; margin-bottom: 1px; background-color: white; border-left: 140px solid white; border-right: 140px solid white;">
       <p class="">Grazie per aver scelto il nostro Ristorante Albaruja<br>
        La cucina come atto di Condivisione
 </p>
@@ -72,7 +72,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
       <a href="javascript:void(0)" onclick="openMenu(event, 'Eventi');">
         <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Eventi</div>
       </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Eventi');">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Allergeni');">
         <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Allergeni</div>
       </a>
     </div>
@@ -286,6 +286,7 @@ insalata di polpo, seppie e polpa di granchio</b> <span class="w3-right w3-tag w
     </div>
     
     <div id="Pizzeria" class="w3-container menu w3-padding-32 w3-white">
+      <h1 style="text-align: center">La Pizzeria è aperta solo la sera<br>The Pizzeria is open only for dinner.</h1>
       <h2 style="text-align: center;">ANTIPASTI<br>APPETIZER</h2>
       <h1><b>Supplì</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  1.50</span></h1>
       <p class="w3-text-grey">Rice croquettes with tomato, minced meat, cheese</p>
@@ -295,10 +296,6 @@ insalata di polpo, seppie e polpa di granchio</b> <span class="w3-right w3-tag w
       <hr>
       <h1><b>Bruschetta bianca</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  3.00</span></h1>
       <p class="w3-text-grey">Bread with oil and garlic</p>
-      <hr>
-      <h1><b>Bruschetta bianca</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  3.00</span></h1>
-      <p class="w3-text-grey">Bread with oil and garlic</p>
-      <hr>
       <hr>
 	  <h1><b>Bruschetta pomodoro</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  2.50</span></h1>
 	  <p class="w3-text-grey">Bread with tomato</p>
@@ -346,7 +343,6 @@ insalata di polpo, seppie e polpa di granchio</b> <span class="w3-right w3-tag w
 	  <h1><b>Capricciosa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  8.50</span></h1>
 	  <p class="w3-text-grey">Tomato sauce, cheese, egg, mushrooms, ham</p>
 	  <hr>
-      <hr>
 	  <h1><b>Boscaiola</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  8.50</span></h1>
 	  <p class="w3-text-grey">Cheese, mushrooms, and sausages</p>
 	  <hr>
@@ -368,30 +364,128 @@ insalata di polpo, seppie e polpa di granchio</b> <span class="w3-right w3-tag w
 	  <h1><b>Bianca con la Nduja</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  8.50</span></h1>
 	  <p class="w3-text-grey">Cheese, spicy spreadable salami</p>
 	  <hr>
+      <p class="w3-text-grey">Per gli allergeni contenuti nelle pietanze consultare la lista presente alla fine di questo menu’.</p>
     </div>
     
     <div id="Desserts" class="w3-container menu w3-padding-32 w3-white">
       <h2 style="text-align: center;">DESSERT</h2>
-      <h1><b>Chocolate Cake</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
-      <p class="w3-text-grey">Decadent chocolate cake</p>
-      <hr>
-      <!-- Add more dessert items here -->
+      <h1><b>Tiramisu della casa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  5.00</span></h1>
+	  <p class="w3-text-grey">Homemade tiramisu</p>
+	  <hr>
+	  <h1><b>Panna cotta della casa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  5.00</span></h1>
+	  <p class="w3-text-grey">Homemade panna cotta</p>
+	  <hr>
+	  <h1><b>Seadas</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  6.00</span></h1>
+	  <p class="w3-text-grey">Typical Sardinian dessert stuffed with cheese topped with honey</p>
+	  <hr>
+	  <h1><b>Sorbetto al limone</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  4.00</span></h1>
+	  <p class="w3-text-grey">Lemon sorbet</p>
+	  <hr>
+	  <h1><b>Tartufo</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  5.00</span></h1>
+	  <p class="w3-text-grey">Tartufo ice cream</p>
+	  <hr>
+	  <h1><b>Torte assortite</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  5.00</span></h1>
+	  <p class="w3-text-grey">Assorted cakes</p>
+	  <hr>
+	  <h2 style="text-align: center;">BEVANDE<br>DRINKS</h2>
+      <h1><b>Vino della casa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  6.00</span></h1>
+	  <p class="w3-text-grey">Red/white house wine - cl 37.5</p>
+	  <hr>
+	  <h1><b>Vino della casa</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€10.00</span></h1>
+	  <p class="w3-text-grey">Red/white house wine - cl 75</p>
+	  <hr>
+	  <h1><b>Calice - Glass</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  4.00</span></h1>
+	  <p class="w3-text-grey">Red/white house wine - Glass</p>
+	  <hr>
+	  <h1><b>Acqua minerale</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  2.50</span></h1>
+	  <p class="w3-text-grey">Mineral water - 1L</p>
+	  <hr>
+	  <h1><b>Acqua minerale</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  2.00</span></h1>
+	  <p class="w3-text-grey">Mineral water - cl 50</p>
+	  <hr>
+	  <h1><b>Bibite</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  2.50</span></h1>
+	  <p class="w3-text-grey">Coca-Cola, Sprite, Fanta</p>
+	  <hr>
+	  <h1><b>Birre</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  2.50</span></h1>
+	  <p class="w3-text-grey">Beer - cl 33</p>
+	  <hr>
+	  <h1><b>Birre</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  4.00</span></h1>
+	  <p class="w3-text-grey">Beer - cl 66</p>
+	  <hr>
+	  <h1><b>Liquori nazionali</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  2.50</span></h1>
+	  <p class="w3-text-grey">National liqueur</p>
+	  <hr>
+	  <h1><b>Liquori esteri</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  3.00</span></h1>
+	  <p class="w3-text-grey">Foreign liqueur</p>
+	  <hr>
+	  <h1><b>Caffè</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€  2.00</span></h1>
+	  <p class="w3-text-grey">Espresso</p>
+	  <hr>
+      <p class="w3-text-grey">Per gli allergeni contenuti nelle pietanze consultare la lista presente alla fine di questo menu’.</p>
     </div>
     
     <div id="Eventi" class="w3-container menu w3-padding-32 w3-white">
-      <h2 style="text-align: center;">DESSERT</h2>
-      <h1><b>Chocolate Cake</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
-      <p class="w3-text-grey">Decadent chocolate cake</p>
-      <hr>
-      <!-- Add more dessert items here -->
+      <p class="w3-text-grey">La location del Ristorante ALBARUJA è perfetta per l’organizzazione di eventi come matrimoni, anniversari, ricorrenze e meeting di lavoro: nel cuore di Roma e l’architettura del locale permettono di organizzare buffet e pranzi su misura.<br> Il nostro Chef è disponibile per personalizzare il menù in base alle vostre esigenze e preferenze.<br> La ricchezza delle proposte ben si adatta all’organizzazione di feste di laurea, feste di compleanno, business lunch.<br>
+Contattateci per verificare la disponibilità.<br>
+Visita il nostro sito web:<br> WWW.ALBARUJA.IT<br>
+Oppure chiama al:<br>
+TEL.N.06 5806035<br></p>
     </div>
     
     <div id="Allergeni" class="w3-container menu w3-padding-32 w3-white">
-      <h2 style="text-align: center;">DESSERT</h2>
-      <h1><b>Chocolate Cake</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
-      <p class="w3-text-grey">Decadent chocolate cake</p>
-      <hr>
-      <!-- Add more dessert items here -->
+      <table>
+  <tr>
+    <th>Allergene</th>
+    <th>Alcuni esempi</th>
+  </tr>
+  <tr>
+    <td>Cereali contenenti glutine</td>
+    <td>grano, segale, orzo, avena, farro, kamut</td>
+  </tr>
+  <tr>
+    <td>Crostacei e prodotti a base di crostacei</td>
+    <td>gamberi, gamberetti, aragoste, astici, scampi, granchi</td>
+  </tr>
+  <tr>
+    <td>Uova e prodotti a base di uova</td>
+    <td>maionese, frittata, emulsionanti, pasta all'uovo, biscotti e torte anche salate, gelati</td>
+  </tr>
+  <tr>
+    <td>Pesce e derivati</td>
+    <td>inclusi i derivati, cioè tutti quei prodotti alimentari che si compongono di pesce, anche se in piccole percentuali</td>
+  </tr>
+  <tr>
+    <td>Arachidi e prodotti a base di arachidi</td>
+    <td>arachidi tostate, olio di arachidi, burro di arachidi, farina di arachidi, margarina</td>
+  </tr>
+  <tr>
+    <td>Soia e derivati</td>
+    <td>latte, tofu, spaghetti, etc.</td>
+  </tr>
+  <tr>
+    <td>Latte e prodotti a base di latte</td>
+    <td>yogurt, biscotti, torte, gelato e creme varie</td>
+  </tr>
+  <tr>
+    <td>Frutta a guscio</td>
+    <td>mandorle, nocciole, noci, anacardi</td>
+  </tr>
+  <tr>
+    <td>Sedano e prodotti a base di sedano</td>
+    <td>sedano da coste o gambi, sedano, sedimenti di sedano, sedano, foglie di sedano, succo di sedano, polvere di sedano</td>
+  </tr>
+  <tr>
+    <td>Senape e prodotti a base di senape</td>
+    <td>semi di senape, polpa di senape, senape, olio di senape, germogli di senape, foglie di senape</td>
+  </tr>
+  <tr>
+    <td>Semi di sesamo e prodotti a base di semi di sesamo</td>
+    <td>semi di sesamo, farina di sesamo, pasta di sesamo, olio di sesamo, burro di sesamo</td>
+  </tr>
+  <tr>
+    <td>Anidride solforosa e solfiti</td>
+    <td>concentrazioni superiori a 10 mg/kg o 10 mg/l espressi come SO2: conserve di prodotti ittici, cibi sott'aceto, sott'olio e in salamoia, nelle marmellate, nell'aceto, nei funghi secchi e nelle bibite analcoliche e succhi di frutta</td>
+  </tr>
     </div>
     
     
