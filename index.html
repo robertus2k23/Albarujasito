@@ -1,57 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Restaurant Menu</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    .menu-container {
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .menu-item {
-      width: 25%;
-      padding: 10px;
-      box-sizing: border-box;
-    }
-    @media screen and (max-width: 767px) {
-      .menu-item {
-        width: 50%;
-      }
-    }
-    @media screen and (max-width: 479px) {
-      .menu-item {
-        width: 100%;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="menu-container">
-    <div class="menu-item">
-      <h2>Item 1</h2>
-      <p>Description of item 1</p>
-      <p>Price: $10</p>
+  <header>
+    <h1>Restaurant Name</h1>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="menu">
+    <h2>Menu</h2>
+    
+    <div class="category">
+      <h3>Pesce Menu</h3>
+      <ul>
+        <li>PANE – BRED (A persona) €2,00</li>
+      </ul>
     </div>
-    <div class="menu-item">
-      <h2>Item 2</h2>
-      <p>Description of item 2</p>
-      <p>Price: $12</p>
+    
+    <div class="category">
+      <h3>Antipasti di Crudo – Raw Starters</h3>
+      <ul>
+        <li>CARPACCIO DI SPIGOLA (Carpaccio of bass) €15,00</li>
+        <li>OSTRICHE (Oysters each one) €3,00</li>
+      </ul>
     </div>
-    <div class="menu-item">
-      <h2>Item 3</h2>
-      <p>Description of item 3</p>
-      <p>Price: $8</p>
-    </div>
-    <div class="menu-item">
-      <h2>Item 4</h2>
-      <p>Description of item 4</p>
-      <p>Price: $15</p>
-    </div>
-  </div>
+    
+    <!-- Add more categories and items here -->
+    
+  </section>
+  
+  <section id="contact">
+    <h2>Contact</h2>
+    <!-- Contact information goes here -->
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
