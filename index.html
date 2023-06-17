@@ -49,16 +49,25 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
     <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
     <div class="w3-row w3-center w3-border w3-border-dark-grey">
       <a href="javascript:void(0)" onclick="openMenu(event, 'Pesce');" id="myLink">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pesce</div>
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pesce - Fish</div>
       </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Salads</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Carne');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Carne - Meat</div>
       </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter</div>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Contorni');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Contorni - Sides</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizzeria');">
+        <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Pizzeria</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Desserts');">
-        <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Desserts</div>
+        <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Dessert- Drinks</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eventi');">
+        <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Eventi</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eventi');">
+        <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Allergeni</div>
       </a>
     </div>
     <div id="Pesce" class="w3-container menu w3-padding-32 w3-white">
@@ -165,7 +174,7 @@ insalata di polpo, seppie e polpa di granchio</b> <span class="w3-right w3-tag w
     </div>
     
 
-    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+    <div id="Carne" class="w3-container menu w3-padding-32 w3-white">
       <h1><b>Lasagna</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
       <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
       <hr>
@@ -176,7 +185,7 @@ insalata di polpo, seppie e polpa di granchio</b> <span class="w3-right w3-tag w
       <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
     </div>
 
-    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+    <div id="Contorni" class="w3-container menu w3-padding-32 w3-white">
       <h1><b>Garlic Bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.50</span></h1>
       <p class="w3-text-grey">Toasted garlic bread</p>
       <hr>
@@ -187,6 +196,14 @@ insalata di polpo, seppie e polpa di granchio</b> <span class="w3-right w3-tag w
       <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh basil</p>
     </div>
     
+    <div id="Pizzeria" class="w3-container menu w3-padding-32 w3-white">
+      <h2 style="text-align: center;">DESSERT</h2>
+      <h1><b>Chocolate Cake</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+      <p class="w3-text-grey">Decadent chocolate cake</p>
+      <hr>
+      <!-- Add more dessert items here -->
+    </div>
+    
     <div id="Desserts" class="w3-container menu w3-padding-32 w3-white">
       <h2 style="text-align: center;">DESSERT</h2>
       <h1><b>Chocolate Cake</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
@@ -194,6 +211,9 @@ insalata di polpo, seppie e polpa di granchio</b> <span class="w3-right w3-tag w
       <hr>
       <!-- Add more dessert items here -->
     </div>
+    
+    
+    
 
   </div>
 </div>
