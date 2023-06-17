@@ -81,7 +81,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
   background-color: white;
   z-index: 9999;
   opacity: 1;
-  transition: opacity 3s ease;
+  transition: opacity 4s cubic-bezier(0.4, 0, 1, 1);
 }
 
 #loading-screen.fade-out {
@@ -95,7 +95,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 <body>
 <!-- Loading Screen -->
 <div id="loading-screen">
-  <img src="lochefconsiglia.svg" alt="Loading Image">
+  <img src="https://vistaristorante.it/img/menu/lochefconsiglia.svg" alt="Loading Image">
   <p>Grazie per aver scelto il nostro Ristorante Albaruja<br>La cucina come atto di Condivisione</p>
 </div>
 
@@ -589,8 +589,8 @@ window.addEventListener("load", function() {
       document.getElementById("loading-screen").style.display = "none";
       // Show the menu content
       document.getElementById("menu").style.display = "block";
-    }, 3000); // Delay should match the transition duration in CSS
-  }, 3000); // Delay before fade-out effect starts, adjust as needed
+    }, 4000); // Delay should match the transition duration in CSS
+  }, 1000); // Delay before fade-out effect starts, adjust as needed
 });
  
 </script>
