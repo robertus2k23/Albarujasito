@@ -14,20 +14,25 @@ body, html {height: 100%}
 body,h1,h2,h3,h4,h5,h6 {font-family: 'Libre Baskerville', serif;}
 .menu {display: none}
 
+body {
+    margin: 0;
+    padding: 0;
+  }
 
 @media (max-width: 600px) {
   /* Adjustments for smaller screens */
   .w3-jumbo {
     font-size: 2rem;
   }
+  
 
   .tablink {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 6px;
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	text-align: center;
     font-size: 14px;
+    
   }
 
   .menu {
@@ -48,7 +53,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Libre Baskerville', serif;}
   p {
     font-size: 16px;
   }
-  
+}
+
   table {
     width: 100%;
     border-collapse: collapse;
@@ -101,8 +107,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: 'Libre Baskerville', serif;}
   opacity: 0;
 }
 
+#menu-container {
+  background-image: url('https://img.freepik.com/free-photo/view-white-crumpled-paper_1194-7544.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-}  
+  
 </style>
 </head>
 <body>
