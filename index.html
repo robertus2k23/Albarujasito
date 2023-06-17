@@ -10,26 +10,8 @@
 body, html {height: 100%}
 body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 .menu {display: none}
-.bgimg {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("/w3images/pizza.jpg");
-  min-height: 90%;
-}
-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th, td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-  }
+
+
 @media (max-width: 600px) {
   /* Adjustments for smaller screens */
   .w3-jumbo {
@@ -52,6 +34,32 @@ table {
 
   p {
     font-size: 16px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    word-wrap: break-word;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  @media (max-width: 600px) {
+    table {
+      font-size: 14px;
+    }
+    
+    th, td {
+      padding: 6px;
+    }
   }
 }  
 </style>
