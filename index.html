@@ -34,6 +34,11 @@ body {
     margin-top: 50px; /* Change this value to suit your needs */
   }
 
+/* Add this CSS to adjust the active menu item's background color */
+  .active {
+    background-color: red;
+  }
+  
 @media (max-width: 600px) {
   /* Adjustments for smaller screens */
   .w3-jumbo {
@@ -68,7 +73,9 @@ body {
   p {
     font-size: 16px;
   }
-}  
+}
+
+
   table {
     width: 100%;
     border-collapse: collapse;
@@ -126,6 +133,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
   
 </style>
 </head>
@@ -138,34 +146,33 @@ body {
 </div>
 
 <!-- Menu Container -->
-<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
-  <div class="w3-content">
-    
-    </div>
-
-    <div class="w3-row w3-center w3-border w3-border-dark-grey">
-  <a href="javascript:void(0)" onclick="openMenu(event, 'Pesce');" id="myLink">
-    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pesce <br>Fish</div>
-  </a>
-  <a href="javascript:void(0)" onclick="openMenu(event, 'Carne');">
-    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Carne<br>Meat</div>
-  </a>
-  <a href="javascript:void(0)" onclick="openMenu(event, 'Contorni');">
-    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Contorni <br>Side dishes</div>
-  </a>
-  <a href="javascript:void(0)" onclick="openMenu(event, 'Pizzeria');">
-    <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Pizzeria</div>
-  </a>
-  <a href="javascript:void(0)" onclick="openMenu(event, 'Desserts');">
-    <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Dessert&<br> Drinks</div>
-  </a>
-  <a href="javascript:void(0)" onclick="openMenu(event, 'Eventi');">
-    <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Eventi</div>
-  </a>
-  <a href="javascript:void(0)" onclick="openMenu(event, 'Allergeni');">
-    <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Allergeni</div>
-  </a>
-    </div>
+<div class="w3-row w3-center w3-border w3-border-dark-grey">
+  <div class="w3-container">
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Pesce');" id="menuLink1">
+      <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pesce <br>Fish</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Carne');" id="menuLink2">
+      <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Carne<br>Meat</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Contorni');" id="menuLink3">
+      <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Contorni <br>Side dishes</div>
+    </a>
+  </div>
+  <div class="w3-container">
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Pizzeria');" id="menuLink4">
+      <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Pizzeria</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Desserts');" id="menuLink5">
+      <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Dessert&<br> Drinks</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Eventi');" id="menuLink6">
+      <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Eventi</div>
+    </a>
+    <a href="javascript:void(0)" onclick="openMenu(event, 'Allergeni');" id="menuLink7">
+      <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Allergeni</div>
+    </a>
+  </div>
+</div>
     <div class="w3-content">
     <div id="Pesce" class="w3-container menu w3-padding-32 w3-white">
       <h2 style="text-align: center;">ANTIPASTI DI CRUDO<br>RAW STARTERS</h2>
@@ -596,19 +603,23 @@ isolamento di lupino, germogli di erba medica</td>
 </div>
 
 <script>
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+ function openMenu(evt, menuName) {
+    var i, x;
+    x = document.getElementsByClassName("menu");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    var activeMenu = document.getElementById("menuLink1");
+    activeMenu.classList.remove("active");
+  
+    evt.currentTarget.classList.add("active");
+  
+    var menu = document.getElementById(menuName);
+    menu.style.display = "block";
+  
+    // Scroll to the top of the page
+    window.scrollTo(0, 0);
   }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.className += " w3-red";
-}
 // Click on the first tablink to open it by default
 document.getElementsByClassName("tablink")[0].click();
  
