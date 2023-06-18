@@ -18,6 +18,21 @@ body {
     margin: 0;
     padding: 0;
   }
+ /* Add this CSS to make the menu stay fixed at the top */
+  .w3-row {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: black; /* Add this line to set the background color */
+    color: white; /* Add this line to set the text color */
+  }
+  
+  /* Adjust the margin-top of the content below the menu to prevent overlap */
+  .w3-content {
+    margin-top: 50px; /* Change this value to suit your needs */
+  }
 
 @media (max-width: 600px) {
   /* Adjustments for smaller screens */
@@ -124,35 +139,35 @@ body {
 </div>
 
 <!-- Menu Container -->
-<div id="menu-container" style="background-image: url('https://img.freepik.com/free-photo/white-plaster-texture_1194-5600.jpg');">
 <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
   <div class="w3-content">
     
     </div>
 
     <div class="w3-row w3-center w3-border w3-border-dark-grey">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Pesce');" id="myLink">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pesce <br>Fish</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Carne');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Carne<br>Meat</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Contorni');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Contorni <br>Side dishes</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizzeria');">
-        <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Pizzeria</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Desserts');">
-        <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Dessert&<br> Drinks</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Eventi');">
-        <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Eventi</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Allergeni');">
-        <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Allergeni</div>
-      </a>
+  <a href="javascript:void(0)" onclick="openMenu(event, 'Pesce');" id="myLink">
+    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pesce <br>Fish</div>
+  </a>
+  <a href="javascript:void(0)" onclick="openMenu(event, 'Carne');">
+    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Carne<br>Meat</div>
+  </a>
+  <a href="javascript:void(0)" onclick="openMenu(event, 'Contorni');">
+    <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Contorni <br>Side dishes</div>
+  </a>
+  <a href="javascript:void(0)" onclick="openMenu(event, 'Pizzeria');">
+    <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Pizzeria</div>
+  </a>
+  <a href="javascript:void(0)" onclick="openMenu(event, 'Desserts');">
+    <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Dessert&<br> Drinks</div>
+  </a>
+  <a href="javascript:void(0)" onclick="openMenu(event, 'Eventi');">
+    <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Eventi</div>
+  </a>
+  <a href="javascript:void(0)" onclick="openMenu(event, 'Allergeni');">
+    <div class="w3-col s3 tablink w3-padding-large w3-hover-red">Allergeni</div>
+  </a>
     </div>
+    <div class="w3-content">
     <div id="Pesce" class="w3-container menu w3-padding-32 w3-white">
       <h2 style="text-align: center;">ANTIPASTI DI CRUDO<br>RAW STARTERS</h2>
       <h1><b>Carpaccio di spigola</b> <span class="w3-right w3-tag w3-dark-grey w3-round">€15.00</span></h1>
@@ -577,8 +592,7 @@ isolamento di lupino, germogli di erba medica</td>
   </tr>
     </div>
     
-    
-  </div>	
+    </div>
   </div>
 </div>
 
