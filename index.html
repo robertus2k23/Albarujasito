@@ -616,17 +616,12 @@ isolamento di lupino, germogli di erba medica</td>
   
     var menu = document.getElementById(menuName);
     menu.style.display = "block";
-  // Click on the first tablink to open it by default
-var defaultTablink = document.getElementsByClassName("tablink")[0];
-defaultTablink.click(); // Index 0 corresponds to the "Pesce Fish" menu
-
-// Add the "active" class to make the button appear as clicked
-defaultTablink.classList.add("active");
+  
     // Scroll to the top of the page
     window.scrollTo(0, 0);
   }
 // Click on the first tablink to open it by default
-document.getElementsByClassName("tablink")[0].click();
+document.getElementsByClassName("tablink")[1].click();
  
  // Wait for the page to load
 window.addEventListener("load", function() {
